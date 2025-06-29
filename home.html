@@ -30,17 +30,17 @@
                 <!-- button -->
                 <div class="flex justify-center ">
 
-                    <button class=" mr-4 btn btn-xs bg-white border-none sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add
+                    <button id="add-money-btn" class=" mr-4 btn btn-xs bg-white border-none sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add
                         money
                     </button>
-                    <button class="btn btn-xs bg-white border-none sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Cash out
+                    <button id="cash-out-btn" class="btn btn-xs bg-white border-none sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Cash out
                     </button>
                 </div>
                 <div class="divider"></div>
 
                 <!-- text input -->
 
-                <div class="hero-content hidden  flex-col lg:flex-row-reverse">
+                <div id="add-money-form" class="hero-content   flex-col lg:flex-row-reverse">
 
                     <div class="card bg-base-100 w-full rounded-2xl  max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <!-- cash out input start -->
-                <div class="hero-content  flex-col lg:flex-row-reverse">
+                <div id="cash-out-form" class="hero-content hidden  flex-col lg:flex-row-reverse">
 
                     <div class="card bg-base-100 w-full rounded-2xl  max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
@@ -94,6 +94,7 @@
 
     <script src="js/add.js"></script>
     <script src="js/cash_out.js"></script>
+    <script src="js/toggle.js"></script>
 </body>
 
 </html>
