@@ -12,10 +12,33 @@
 
 <body>
 
-    <main class=" flex justify-center ">
-        <div class="mockup-phone">
+   <main class=" flex justify-center ">
+        <div class="mockup-phone ">
             <div class="mockup-phone-camera"></div>
-            <div class="mockup-phone-display bg-base-300 grid place-content-center">It's Glowtime.</div>
+            <div class="mockup-phone-display    bg-base-200  grid place-content-center">
+
+                <div class="hero bg-base-200 min-h-screen">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card bg-base-100 w-full  max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset " >
+                                   
+                                    <label class="label " >Mobile Number</label>
+                                    <input type="text" id="phone-number" class="input rounded-full  bg-base-200 border-none  "
+                                        placeholder="Enter your Number" />
+                                    <label class="label">4 Digit Pin</label>
+                                    <input type="password" id="pin-number" class="input rounded-full bg-base-200 border-none"
+                                        placeholder="Enter 4 digit pin" />
+
+                                    <button id="btn-login"
+                                        class="btn btn-neutral mt-4 bg-blue-600 text-white border-none rounded-full">Login</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
