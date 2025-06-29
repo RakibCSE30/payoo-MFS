@@ -10,66 +10,38 @@
 </head>
 
 <body>
-
     <main class=" flex justify-center ">
-        <div class="mockup-phone">
+        <div class="mockup-phone ">
             <div class="mockup-phone-camera"></div>
-            <div class="mockup-phone-display bg-base-300  place-content-center">
-                <!-- add top of the box -->
-                <div class="flex  justify-center ">
-                    <div class="stats shadow bg-white ">
-                        <div class="stat">
+            <div class="mockup-phone-display    bg-base-200  grid place-content-center">
 
-                            <div class="stat-value" id="balance">9400</div>
+                <div class="hero bg-base-200 min-h-screen">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
 
+                        <div class="card bg-base-100 w-full  max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset " >
+                                   
+                                    <label class="label " >Mobile Number</label>
+                                    <input type="text" id="phone-number" class="input rounded-full  bg-base-200 border-none  "
+                                        placeholder="Enter your Number" />
+                                    <label class="label">4 Digit Pin</label>
+                                    <input type="password" id="pin-number" class="input rounded-full bg-base-200 border-none"
+                                        placeholder="Enter 4 digit pin" />
+
+                                    <button id="btn-login"
+                                        class="btn btn-neutral mt-4 bg-blue-600 text-white border-none rounded-full">Login</button>
+                                </fieldset>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="divider"></div>
-                <!-- button -->
-                <div class="flex justify-center ">
-
-                    <button class=" mr-4 btn btn-xs bg-white border-none sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Add
-                        money
-                    </button>
-                    <button class="btn btn-xs bg-white border-none sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Cash out
-                    </button>
-                </div>
-                <div class="divider"></div>
-
-                <!-- text input -->
-
-                <div class="hero-content  flex-col lg:flex-row-reverse">
-
-                    <div class="card bg-base-100 w-full rounded-2xl  max-w-sm shrink-0 shadow-2xl">
-                        <div class="card-body">
-                            <fieldset class="fieldset ">
-
-                                <label class="label "> Amount to add</label>
-                                <input type="text" id="phone-number"
-                                    class="input rounded-full  bg-base-200 border-none  "
-                                    placeholder="Enter your Number" />
-                                <label class="label">Pin</label>
-                                <input type="password" id="pin-number"
-                                    class="input rounded-full bg-base-200 border-none" placeholder="Pin-number" />
-
-                                <button id="btn-add-money"
-                                    class="btn btn-neutral mt-4 bg-blue-600 text-white border-none rounded-full">Add
-                                    money</button>
-                            </fieldset>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-
         </div>
     </main>
 
+    <script src="js/login.js"></script>
 
-    <script src="js/add.js"></script>
 </body>
 
 </html>
