@@ -1,20 +1,24 @@
-console.log('Add js file');
+ 
 document.getElementById('btn-add-money').addEventListener('click',function(event){
-    console.log('Inside of the ');
+    
     event.preventDefault();
-    const curentNumber=document.getElementById('phone-number').value;
-    curentBalance = parseFloat(curentNumber);
-    const pinCode=document.getElementById('pin-number').value;
+    // const curentNumber=document.getElementById('phone-number').value;
+    const curentNumber=getInputFieldValueById('phone-number');
+    // curentBalance = parseFloat(curentNumber);
+    const pinCode=getInputFieldValueById('pin-number');
+    // document.getElementById('pin-number').value;
+    
     console.log(curentNumber,pinCode);
 
-    if(pinCode==='1234'){
+    if(pinCode===1234){
         console.log('sucesfuly added');
-        const balance=document.getElementById('balance').innerText;
-        balanceNumber=parseFloat(balance);
+        const balance=getInputTextValueById('balances');
+        // document.getElementById('balance').innerText;
+        // balanceNumber=parseFloat(balance);
         console.log(balance);
-        const newBalance=balanceNumber+curentBalance;
+        const newBalance=balance+curentNumber;
         console.log(newBalance);
-        document.getElementById('balance').innerText=newBalance;
+        document.getElementById('balances').innerText=newBalance;
         
         
         

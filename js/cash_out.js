@@ -1,4 +1,4 @@
-console.log('Cash out taka');
+ 
 
 document.getElementById('btn-cash-out').addEventListener('click',function(event){
 
