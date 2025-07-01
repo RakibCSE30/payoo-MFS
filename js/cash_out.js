@@ -8,12 +8,23 @@ document
     // currentBalance = parseFloat(curentNumber2);
     const pin2 = getInputFieldValueById('pin-number2');
     // document.getElementById("pin-number2").value;
+     if(isNaN(curentNumber2)){
+        console.log('Allert!!');
+        return;
+        
+    }
     console.log(curentNumber2, pin2);
     if (pin2 === 1234) {
       console.log("sucesfuly added");
       const balance = getInputTextValueById('balances')
     //   document.getElementById("balance").innerText;
     //   balanceNumber = parseFloat(balance);
+
+     if(curentNumber2>balance){
+            console.log('Allert!!');
+            return;
+            
+        }
       console.log(balance);
       const newBalance = balance - curentNumber2;
       console.log(newBalance);

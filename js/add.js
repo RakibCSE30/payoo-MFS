@@ -7,12 +7,22 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     // curentBalance = parseFloat(curentNumber);
     const pinCode=getInputFieldValueById('pin-number');
     // document.getElementById('pin-number').value;
+    if(isNaN(curentNumber)){
+        console.log('Allert!!');
+        return;
+        
+    }
     
     console.log(curentNumber,pinCode);
 
     if(pinCode===1234){
         console.log('sucesfuly added');
         const balance=getInputTextValueById('balances');
+        if(curentNumber>balance){
+            console.log('Allert!!');
+            return;
+            
+        }
         // document.getElementById('balance').innerText;
         // balanceNumber=parseFloat(balance);
         console.log(balance);
