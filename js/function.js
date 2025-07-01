@@ -8,3 +8,11 @@ function getInputTextValueById(id){
     
     return inputText;
 }
+
+function selectById(id){
+    // all button are hidden
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    // select the id then show it
+    document.getElementById(id).classList.remove('hidden');
+}
